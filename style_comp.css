@@ -1,0 +1,115 @@
+div.container {
+	border: 1px solid gray;
+	margin: 3px;
+	
+}
+nav {
+	float: left;
+	clear: both;
+	margin: center;
+	max-width:400px;
+	
+}
+article {
+	margin-left: 400px;
+	border-left: 1px solid gray;
+	padding: 1em;
+	
+}
+.outerbox
+{
+	width:inherit;
+	overflow:hidden;
+	
+}
+.sliderbox
+{
+	position:relative;
+	width:7680px;
+	animation:memory 20s infinite;
+	
+	
+}
+
+.box1:checked ~ .outerbox > .box1,
+.box2:checked ~ .outerbox > .box2,
+.box3:checked ~ .outerbox > .box3,
+.box4:checked ~ .outerbox > .box4{
+	opacity:1;
+}
+
+.box1:checked ~ .labels > .l1,
+.box2:checked ~ .labels > .l2,
+.box3:checked ~ .labels > .l3,
+.box4:checked ~ .labels > .l4{
+	background-color: #EFB31F;
+}
+
+.labels{
+	position:absolute;
+	bottom: 625px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.s_index{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 6px;
+	cursor: pointer;
+	border: 1px solid;
+	animation:memory 20s infinite;
+}
+
+.rnav{
+	display: none;
+}
+
+.sliderbox img
+{
+	float:left;
+}
+
+@keyframes memory
+{
+	0%
+	{
+		left:0px;
+	}
+	20%
+	{
+		left:0px;
+	}
+	25%
+	{
+		left:-1920px;
+	}
+	45%
+	{
+		left:-1920px;
+	}
+	50%
+	{
+		left:-3840px;
+	}
+	70%
+	{
+		left:-3840px;
+	}
+	75%
+	{
+		left:-5760px;
+	}
+	95%
+	{
+		left:-5760px;
+	}
+	100%
+	{
+		left:-7680px;
+	}
+}
+	
